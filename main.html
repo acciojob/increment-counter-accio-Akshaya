@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter {
+            font-size: 2rem;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-   <div id="increment-counter">
-	   <p id="counter">0</p>
-	   <button id ="incrementBtn">Increment</button>
-	   
-   </div>
-	
-	<script type="text/javascript" src="./script.js">
-		
-</script>
+    <h1>Increment Counter</h1>
+    <p id="counter">0</p>
+    <button id="incrementBtn">Increment</button>
 
+    <script>
+        // Initialize counter value
+        let counterValue = 0;
+
+        // Define the increment handler function
+        function handleIncrement() {
+            // Display the current value in the alert
+            alert(counterValue); // Show only the numeric value as expected by the test
+            counterValue++;
+            // Update the counter in the DOM
+            document.getElementById('counter').textContent = counterValue;
+        }
+
+        // Attach the event listener to the button
+        document.getElementById('incrementBtn').addEventListener('click', handleIncrement);
+    </script>
 </body>
-
 </html>
