@@ -9,6 +9,4 @@ let counterValue = 0;
 
         
         document.getElementById('incrementBtn').addEventListener('click', handleIncrement);
-cy.on('window:alert', (alertText) => {
-    expect(alertText).to.equal('Current value before increment: 0');
-});
+
