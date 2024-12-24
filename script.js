@@ -1,5 +1,5 @@
 //your JS code here. If required.
-let counter = 0;
+let counterValue = 0;
 function handleIncrement(){
 	alert(`Current counter value:${counterValue}`);
 	counterValue+=1;
