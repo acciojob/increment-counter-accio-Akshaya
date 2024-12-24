@@ -1,17 +1,11 @@
 //your JS code here. If required.
 let counterValue = 0;
-const counterElement = document.getElementById('counter');
-const incrementButton = document.getElementById('incrementBtn');
 
-incrementButton.addEventListener('click',()=>{
-	alert(`Current counter value:${counterValue}`);
-	counterValue+=1;
-	counterElement.textcontent = counterValue;
-	
-});
+	function handleIncrement() {
+            alert(`Current value before increment: ${counterValue}`);
+            counterValue++;
+            document.getElementById('counter').textContent = counterValue;
+        }
 
-window.onload = function() {
-	const incrementButton = document.getElementById('incrementBtn');
-	incrementButton.addEventListener('click', handleIncrement);
-	
-};
+        
+        document.getElementById('incrementBtn').addEventListener('click', handleIncrement);
