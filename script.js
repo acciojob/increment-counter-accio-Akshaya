@@ -1,11 +1,14 @@
 //your JS code here. If required.
 let counterValue = 0;
-function handleIncrement(){
+const counterElement = document.getElementById('counter');
+const incrementButton = document.getElementById('incrementBtn');
+
+incrementButton.addEventListener('click',()=>{
 	alert(`Current counter value:${counterValue}`);
 	counterValue+=1;
-	document.getElementById('counter').textcontent = counterValue;
+	counterElement.textcontent = counterValue;
 	
-}
+});
 
 window.onload = function() {
 	const incrementButton = document.getElementById('incrementBtn');
