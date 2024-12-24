@@ -10,11 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById('incrementBtn').addEventListener('click', handleIncrement);
 });
-() => { 
-    cy.visit(baseUrl); 
-    cy.on('window:alert', alertText => { 
-        expect(alertText).to.equal("Current value before increment: 0"); 
-    }); 
-    cy.get('#incrementBtn').click(); 
-}
+cy.on('window:alert', (alertText) => {
+    expect(alertText).to.equal('Current value before increment: 0');
+});
+
 
