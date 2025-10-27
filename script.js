@@ -8,7 +8,7 @@ let count = 0;
 IncrementButton.addEventListener("click",()=>{
 	window.alert(`Current count is: ${count}`);
 	count++;
-
 	counter.textContent = count;
+	 counter.dataset.count = count;
 	
 });
