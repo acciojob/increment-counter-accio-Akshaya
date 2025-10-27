@@ -1,11 +1,10 @@
-//your JS code here. If requireconst  
+//your JS code here. If require
+let count = 0;
 const counter = document.getElementById("counter");
 const IncrementButton = document.getElementById("incrementBtn");
-
-let count = 0;
 
 IncrementButton.addEventListener("click",()=>{
 	count++;
 	counter.textContent = count;
-	alert(`Current count is: ${count}`);
+	window.alert(`Current count is: ${count}`);
 });
